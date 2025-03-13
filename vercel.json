@@ -1,17 +1,20 @@
 {
     "version": 2,
-    "public": true,
     "builds": [
-        {
-            "src": "style.css",
-            "use": "@vercel/static"
-        },
       {
-        "src": "video/*",
+        "src": "index.html",
         "use": "@vercel/static"
       },
       {
-        "src": "index.html",
+        "src": "style.css",
+        "use": "@vercel/static"
+      },
+      {
+        "src": "style.js",
+        "use": "@vercel/static"
+      },
+      {
+        "src": "video/*",
         "use": "@vercel/static"
       }
     ],
