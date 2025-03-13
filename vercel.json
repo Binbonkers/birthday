@@ -1,0 +1,25 @@
+{
+    "version": 2,
+    "public": true,
+    "builds": [
+        {
+            "src": "style.css",
+            "use": "@vercel/static"
+        },
+      {
+        "src": "video/*",
+        "use": "@vercel/static"
+      },
+      {
+        "src": "index.html",
+        "use": "@vercel/static"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "/index.html"
+      }
+    ]
+  }
+  
