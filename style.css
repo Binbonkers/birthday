@@ -1,0 +1,217 @@
+:root {
+    --bg: #282c35;  /* Warna default */
+    --pink: #ff69b4;
+    --dark-gray: #222;
+    --light-gray: #333;
+    --highlight: #ff4081;
+    --black: #000;
+}
+
+body {
+    font-size: 1.2rem;
+    font-family: "Work Sans", sans-serif;
+    background-color: var(--bg);
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* Layar Awal */
+.intro-screen {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: var(--pink);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 1s ease-in-out;
+    z-index: 10;
+}
+
+/* Tombol di Tengah */
+#start-button {
+    font-size: 2rem;
+    padding: 15px 30px;
+    border-radius: 10px;
+    background: white;
+    color: var(--pink);
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#start-button:hover {
+    background: var(--black);
+    color: white;
+}
+
+/* Konten Utama (Awalnya Tersembunyi) */
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s ease-in-out, visibility 0s 1s;
+}
+
+/* Hero Section */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+/* Video Background */
+#video-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(50%) contrast(120%) blur(1px);
+}
+
+/* Heading Styles */
+.hero h1 {
+    font-family: 'Sacramento', cursive;
+    font-size: 8rem;
+    margin: 1cm;
+    color: var(--highlight);
+}
+
+.hero h4 {
+    font-size: 3rem;
+}
+
+/* Button */
+.hero a {
+    background-color: white;
+    color: var(--pink);
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+    margin-top: 20px; /* Tambahkan jarak ke bawah */
+    display: inline-block; /* Pastikan tombol tidak aneh kalau dalam flex */
+}
+
+.hero a:hover {
+    background-color: var(--pink);
+    color: white;
+    transform: scale(1.05);
+}
+
+
+/* Section Undangan (Full Screen) */
+.full-screen {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Animasi Fade-In */
+.fade-in {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transition: opacity 1s ease-in-out;
+}
+
+.text-white {
+    color: white;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.timeline {
+    max-width: 600px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.15); /* Semi transparan */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px) saturate(150%);
+    -webkit-backdrop-filter: blur(15px) saturate(150%);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.event {
+    background: rgba(255, 255, 255, 0.1);
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 12px;
+    color: white;
+    backdrop-filter: blur(12px) saturate(180%);
+    -webkit-backdrop-filter: blur(12px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+}
+
+.time {
+    font-weight: bold;
+    color: var(--highlight);
+    margin-bottom: 5px;
+    text-shadow: 0px 0px 8px rgba(255, 64, 129, 0.5);
+}
+
+h1 {
+    color: var(--highlight);
+    margin-bottom: 20px;
+}
+
+.message {
+    margin-top: 30px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+#video-undangan {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(50%) contrast(100%); /* Mengurangi kecerahan agar lebih gelap */
+}
+
+#undangan::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30%; /* Sesuaikan tinggi gradient */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), transparent);
+    z-index: 0;
+}
+
+#undangan .content {
+    position: relative;
+    z-index: 1;
+}
+
+#undangan {
+    position: relative;
+    overflow: hidden;
+}
+
+
+
