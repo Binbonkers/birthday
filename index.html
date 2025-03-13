@@ -1,104 +1,135 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Happy Birthday</title>
-    
+
     <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" 
-          integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
 
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sacramento&family=Work+Sans:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sacramento&family=Work+Sans:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
 
-<body>
+    <!-- <script defer src="particle.js" defer></script>
+
+    <script src="
+    https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js
+    "></script> -->
+
+    <!-- Bootstrap JS -->
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"
+    ></script>
+  
+      <!-- Custom JS -->
+      <script src="style.js" defer></script>
+  </head>
+
+  <body>
     <!-- Layar Awal -->
     <div id="intro-screen" class="intro-screen">
-        <button id="start-button" class="btn btn-lg">🎉 Click Me 🎉</button>
+      <button id="start-button" class="btn btn-lg">🎉 Click Me 🎉</button>
     </div>
 
     <!-- Konten Utama (Awalnya Tersembunyi) -->
     <div id="main-content" class="hidden">
-        <!-- Hero Section -->
-        <section id="hero" class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center">
-            <!-- Video Background -->
-            <video id="video-bg" class="hidden" playsinline muted loop>
-                <source src="https://binbonkers.github.io/birthday/background.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            
+      <!-- Hero Section -->
+      <section id="hero" class="hero mx-auto text-center d-flex">
+        <!-- Video Background -->
+        <video id="video-bg" class="hidden" playsinline muted loop>
+          <source
+            src="https://binbonkers.github.io/birthday/background.mp4"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
 
         <!-- Main Content -->
-        <main>
-            <h1>Happy Birthday</h1>
-            <h4>Nazmiati Laili</h4>
-            <p>Happy Birthday, Sayangggg!
-
-                Semoga di hari spesial ini, Ami merasa bahagia. Dengan bertambahnya usia, semoga semua yang Ami inginkan dapat tercapai.
-                
-                Sebenarnya, aku pengen buat ucapan ini lebih maksimal, tapi karena gaada laptop di rumah jadi harus buat di kantor yang ribet karena banyak kerjaan, jadi belum sesuai. Tapi yang penting, isi hatiku tetap sama—penuh doa dan harapan buat ami.
-                
-                Hari ini emang kita belum bisa langsung merayakannya, tapi shinpai shinaide! Hari Sabtu kita akan selebrasiiii! 🎉 Aku udah merencanakan semuanya, semoga berjalan lancar dan menjadi momen yang menyenangkan untuk kita.
-                
-                Sekali lagi, Happy Birthday, Sayangggg!</p>
-             <a href="#undangan" class="btn-lg mt-4">✨ "Tap Here for the Full Date Plan!" ✨ </a>
-        </main>
-    </section>
-
-    <!-- Section Baru -->
-    <section id="undangan" class="full-screen black-bg d-flex justify-content-center align-items-center text-white text-center position-relative">
-    <!-- Video Kedua -->
-    <video id="video-undangan" autoplay loop muted playsinline>
-        <source src="https://binbonkers.github.io/birthday/video-undangan.mp4" type="video/mp4">
-        Browsermu tidak mendukung video HTML5.
-    </video>
-    
-
-    <div class="content">
-        <h1>🎉 Ami’s Birthday Timeline 🎉</h1>
-        <div class="timeline">
-            <div class="event">
-                <p class="time">🕛 12:00</p>
-                <p>Jemput Ami si Birthday girl ✨ (siap-siap yaaa~)</p>
-            </div>
-            <div class="event">
-                <p class="time">🎬 13:00 - 15:00</p>
-                <p>Jalan jalan di Central Park ngabuburit~ 🎥</p>
-            </div>
-            <div class="event">
-                <p class="time">🎁 16:00</p>
-                <p>Sesi hadiah dari aku! Hehehe 😆</p>
-            </div>
-            <div class="event">
-                <p class="time">🍖 18:00</p>
-                <p>Buka puasa di Neo Soho 🍴🔥 (Makan apa yaa ??)</p>
-            </div>
-            <div class="event">
-                <p class="time">🎤 21:00 - 23:00</p>
-                <p>Nyanyi nyanyiii 🎶🎤 (Teriak-teriak sampe suara abis!)</p>
-            </div>
-            <div class="event">
-                <p class="time">💸 Sepanjang hari</p>
-                <p>My treat! 💕 Ami tinggal duduk manis dan menikmati hari ini~</p>
-            </div>
+        <div class="container">
+          <h1>Happy Birthday</h1>
+          <h4>Nazmiati Laili</h4>
+          <p>
+            Happy Birthday, Sayangggg! Semoga di hari spesial ini, Ami merasa
+            bahagia. Dengan bertambahnya usia, semoga semua yang Ami inginkan
+            dapat tercapai. Sebenarnya, aku pengen buat ucapan ini lebih
+            maksimal, tapi karena gaada laptop di rumah jadi harus buat di
+            kantor yang ribet karena banyak kerjaan, jadi belum sesuai. Tapi
+            yang penting, isi hatiku tetap sama—penuh doa dan harapan buat ami.
+            Hari ini emang kita belum bisa langsung merayakannya, tapi shinpai
+            shinaide! Hari Sabtu kita akan selebrasiiii! 🎉 Aku udah
+            merencanakan semuanya, semoga berjalan lancar dan menjadi momen yang
+            menyenangkan untuk kita. Sekali lagi, Happy Birthday, Sayangggg!
+          </p>
         </div>
-        <p class="message">Di umur Ami yang 25 tahun ini, adalah awal dari perjalanan besar Ami, aku harap semua impian Ami jadi kenyataan. <br><strong>Otanjoubi Omedetouuuu! 🥳💖</strong></p>
+        <a href="#undangan" class="btn-lg mt-4"
+          >✨ "Tap Here for the Full Date Plan!" ✨
+        </a>
+      </section>
+
+      <!-- Section Baru -->
+      <section
+        id="undangan"
+        class="container full-screen black-bg d-flex justify-content-center align-items-center text-white text-center position-relative"
+      >
+        <video id="video-undangan" autoplay loop muted playsinline>
+          <source
+            src="https://binbonkers.github.io/birthday/video-undangan.mp4"
+            type="video/mp4"
+          />
+          Browsermu tidak mendukung video HTML5.
+        </video>
+
+        <div class="content">style
+              <p class="time">🕛 12:00</p>
+              <p>Jemput Ami si Birthday girl ✨ (siap-siap yaaa~)</p>
+            </div>
+            <div class="event">
+              <p class="time">🎬 13:00 - 15:00</p>
+              <p>Jalan jalan di Central Park ngabuburit~ 🎥</p>
+            </div>
+            <div class="event">
+              <p class="time">🎁 16:00</p>
+              <p>Sesi hadiah dari aku! Hehehe 😆</p>
+            </div>
+            <div class="event">
+              <p class="time">🍖 18:00</p>
+              <p>Buka puasa di Neo Soho 🍴🔥 (Makan apa yaa ??)</p>
+            </div>
+            <div class="event">
+              <p class="time">🎤 21:00 - 23:00</p>
+              <p>Nyanyi nyanyiii 🎶🎤 (Teriak-teriak sampe suara abis!)</p>
+            </div>
+            <div class="event">
+              <p class="time">💸 Sepanjang hari</p>
+              <p>
+                My treat! 💕 Ami tinggal duduk manis dan menikmati hari ini~
+              </p>
+            </div>
+          </div>
+          <p class="message">
+            Di umur Ami yang 25 tahun ini, adalah awal dari perjalanan besar
+            Ami, aku harap semua impian Ami jadi kenyataan. <br /><strong
+              >Otanjoubi Omedetouuuu! 🥳💖</strong
+            >
+          </p>
+        </div>
+      </section>
     </div>
-</section>
-
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" 
-            integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-
-    <!-- Custom JS -->
-    <script src="style.js" defer></script>
-</body>
+  </body>
 </html>
-
